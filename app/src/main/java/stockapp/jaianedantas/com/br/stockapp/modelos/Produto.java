@@ -1,4 +1,4 @@
-package stockapp.jaianedantas.com.br.stockapp;
+package stockapp.jaianedantas.com.br.stockapp.modelos;
 
 import android.content.ContentValues;
 

@@ -1,17 +1,13 @@
-package stockapp.jaianedantas.com.br.stockapp;
+package stockapp.jaianedantas.com.br.stockapp.activities;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.database.Cursor;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -20,6 +16,9 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+
+import stockapp.jaianedantas.com.br.stockapp.R;
+import stockapp.jaianedantas.com.br.stockapp.modelos.Venda;
 
 
 public class Form_vendas extends ActionBarActivity {
@@ -43,7 +42,6 @@ public class Form_vendas extends ActionBarActivity {
         db = new MeuOpenHelper(this);
         carregarCampos();
         configurarBotoes();
-
     }
 
     private void configurarBotoes() {

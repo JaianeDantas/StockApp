@@ -1,4 +1,4 @@
-package stockapp.jaianedantas.com.br.stockapp;
+package stockapp.jaianedantas.com.br.stockapp.activities;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -9,6 +9,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+
+import stockapp.jaianedantas.com.br.stockapp.R;
 
 
 public class MainActivity extends ActionBarActivity {

@@ -1,4 +1,4 @@
-package stockapp.jaianedantas.com.br.stockapp;
+package stockapp.jaianedantas.com.br.stockapp.activities;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -10,6 +10,10 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import stockapp.jaianedantas.com.br.stockapp.modelos.Contato;
+import stockapp.jaianedantas.com.br.stockapp.modelos.Produto;
+import stockapp.jaianedantas.com.br.stockapp.modelos.Venda;
 
 
 /**
@@ -24,7 +28,7 @@ public class MeuOpenHelper extends SQLiteOpenHelper {
     public String tabelaProduto = "produtos";
     public String tabelaVenda = "vendas";
 
-    MeuOpenHelper(Context context){
+    public MeuOpenHelper(Context context){
         super(context, NOME_BANCO, null, VERSAO_BANCO);
         this.context = context;
     }

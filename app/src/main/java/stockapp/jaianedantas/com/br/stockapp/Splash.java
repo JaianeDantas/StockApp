@@ -3,10 +3,9 @@ package stockapp.jaianedantas.com.br.stockapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Handler;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+
+import stockapp.jaianedantas.com.br.stockapp.activities.MainActivity;
 
 
 public class Splash extends Activity implements Runnable {

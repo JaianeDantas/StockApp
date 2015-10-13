@@ -1,4 +1,4 @@
-package stockapp.jaianedantas.com.br.stockapp;
+package stockapp.jaianedantas.com.br.stockapp.activities;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -16,6 +16,10 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import stockapp.jaianedantas.com.br.stockapp.Mask;
+import stockapp.jaianedantas.com.br.stockapp.R;
+import stockapp.jaianedantas.com.br.stockapp.modelos.Contato;
 
 
 public class Formulario extends ActionBarActivity {

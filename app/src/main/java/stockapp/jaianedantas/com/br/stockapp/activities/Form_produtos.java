@@ -1,4 +1,4 @@
-package stockapp.jaianedantas.com.br.stockapp;
+package stockapp.jaianedantas.com.br.stockapp.activities;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import stockapp.jaianedantas.com.br.stockapp.R;
+import stockapp.jaianedantas.com.br.stockapp.modelos.Produto;
 
 
 public class Form_produtos extends ActionBarActivity {

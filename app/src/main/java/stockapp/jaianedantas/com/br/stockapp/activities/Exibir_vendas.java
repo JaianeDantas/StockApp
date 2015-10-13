@@ -1,4 +1,4 @@
-package stockapp.jaianedantas.com.br.stockapp;
+package stockapp.jaianedantas.com.br.stockapp.activities;
 
 import android.app.AlertDialog;
 import android.app.ListActivity;
@@ -9,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+
+import stockapp.jaianedantas.com.br.stockapp.R;
 
 /**
  * Created by Jaiane on 26/06/2015.
