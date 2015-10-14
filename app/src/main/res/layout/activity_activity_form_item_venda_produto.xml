@@ -58,7 +58,8 @@
                 android:id="@+id/ItemVenda2-BotaoSalvar"
                 android:layout_column="0"
                 android:layout_row="0"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@android:drawable/ic_input_add"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -67,7 +68,8 @@
                 android:id="@+id/ItemVenda2-BotaoLimpar"
                 android:layout_row="0"
                 android:layout_column="1"
-                android:layout_gravity="bottom|center_horizontal" />
+                android:layout_gravity="bottom|center_horizontal"
+                android:drawableLeft="@android:drawable/ic_delete"/>
         </LinearLayout>
     </GridLayout>
 </RelativeLayout>
