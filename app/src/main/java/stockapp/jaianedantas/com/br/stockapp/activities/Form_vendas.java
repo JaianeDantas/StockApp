@@ -78,9 +78,9 @@ public class Form_vendas extends ActionBarActivity {
 
             Spinner p = (Spinner) findViewById(R.id.completeProduto);
             String t = p.getSelectedItem().toString();
-            venda.setProduto(t);
+            //venda.setProduto(t);
 
-            venda.setQuantidade(quantidade.getText().toString());
+            //venda.setQuantidade(quantidade.getText().toString());
 
             int selectedId = pagamento.getCheckedRadioButtonId();
             RadioButton radioButton = (RadioButton) findViewById(selectedId);

@@ -14,6 +14,7 @@ import android.widget.Toast;
 import stockapp.jaianedantas.com.br.stockapp.R;
 import stockapp.jaianedantas.com.br.stockapp.modelos.ItemVenda;
 import stockapp.jaianedantas.com.br.stockapp.modelos.Produto;
+import stockapp.jaianedantas.com.br.stockapp.modelos.Venda;
 
 public class activity_form_itemVenda_produto extends AppCompatActivity {
 
@@ -75,8 +76,6 @@ public class activity_form_itemVenda_produto extends AppCompatActivity {
             Spinner spinner = (Spinner) findViewById(R.id.ItemVenda2_ProdutoSpinner);
             itemVenda.setProduto((Produto) spinner.getSelectedItem());
             itemVenda.setQuant(Integer.parseInt(quantidade.getText().toString()));
-
-
 
         }catch (Exception e) {
             Toast.makeText(this, "Falha na Gravacao!", Toast.LENGTH_LONG).show();

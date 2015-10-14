@@ -6,6 +6,7 @@ import android.content.ContentValues;
  * Created by Jaiane on 19/06/2015.
  */
 public class Produto {
+    private int id;
     private String cod;
     private String nome;
     private String descricao;
@@ -30,6 +31,14 @@ public class Produto {
         int s = Integer.parseInt(this.estoque) - Integer.parseInt(valor);
         this.estoque = s+"";
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    public int getId() {
+        return this.id;
+    }
+
     public String getCod() {
         return cod;
     }

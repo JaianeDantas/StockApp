@@ -37,8 +37,15 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Button"
-                android:id="@+id/button" />
+                android:text="Add"
+                android:id="@+id/addProduto" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continuar"
+                android:id="@+id/botaoContinuar"
+                android:layout_column="3" />
         </GridLayout>
     </GridLayout>
 

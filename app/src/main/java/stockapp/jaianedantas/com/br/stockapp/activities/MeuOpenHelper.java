@@ -127,12 +127,12 @@ public class MeuOpenHelper extends SQLiteOpenHelper {
     }
 
     public String criaTabelaItemVenda() {
-        return "CREATE TABLE item_venda(id integer primary key autoincrement, id_produto integer NOT NULL foreign key, quantidade integer NOT NULL);";
+        return "CREATE TABLE item_venda(id integer primary key autoincrement, id_venda integer NOT NULL foreign key id_produto integer NOT NULL foreign key, quantidade integer NOT NULL);";
     }
 
     public void salvarItemVenda(ItemVenda itemVenda) throws SQLException {
         abrirDB();
-        db.insert(tabelaItemVenda, null, Integer.parseInt(itemVenda.getProduto().getCod()), itemVenda.getQuant());
+        //db.insert(tabelaItemVenda)
         Toast.makeText(context, "Item Adicionado", Toast.LENGTH_LONG).show();
         fecharDB();
     }

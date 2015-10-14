@@ -36,14 +36,14 @@ public class MainActivity extends ActionBarActivity {
                 carregarTelaCadastro();
             }
         });
-
+/*
         Button btExContatos = (Button) findViewById(R.id.btRelatorioClientes);
         btExContatos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 carregarConsultaCliente();
             }
-        });
+        });*/
 
         Button btExEstoque = (Button) findViewById(R.id.btRelatorioEstoque);
         btExEstoque.setOnClickListener(new View.OnClickListener() {
@@ -83,19 +83,19 @@ public class MainActivity extends ActionBarActivity {
         Intent intent = new Intent(this, Exibir_vendas.class);
         startActivity(intent);
     }
-
+/*
     private void carregarConsultaCliente() {
         Intent intent = new Intent(this, Consulta.class);
         startActivity(intent);
     }
-
+*/
     private void carregarConsultaEstoque() {
         Intent intent = new Intent(this, Exibir_estoque.class);
         startActivity(intent);
     }
 
     private void carregarTelaCadastroVenda() {
-        Intent intent = new Intent(this, Form_vendas.class);
+        Intent intent = new Intent(this, activity_form_itemVenda.class);
         startActivity(intent);
     }
 
