@@ -15,15 +15,18 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.util.List;
 import java.util.ArrayList;
 
 import stockapp.jaianedantas.com.br.stockapp.R;
 import stockapp.jaianedantas.com.br.stockapp.modelos.Venda;
+import stockapp.jaianedantas.com.br.stockapp.modelos.ItemVenda;
 
 
 public class Form_vendas extends ActionBarActivity {
 
     private MeuOpenHelper db;
+    private List<ItemVenda> itensVenda;
     //private ArrayList<String> clientes = new ArrayList<String>();
     //private ArrayList<String> produtos = new ArrayList<String>();
     //private static final String[] clientes = new String[]{};

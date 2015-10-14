@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import stockapp.jaianedantas.com.br.stockapp.modelos.Contato;
+import stockapp.jaianedantas.com.br.stockapp.modelos.ItemVenda;
 import stockapp.jaianedantas.com.br.stockapp.modelos.Produto;
 import stockapp.jaianedantas.com.br.stockapp.modelos.Venda;
 
@@ -27,6 +28,7 @@ public class MeuOpenHelper extends SQLiteOpenHelper {
     public String tabelaContato = "contatos";
     public String tabelaProduto = "produtos";
     public String tabelaVenda = "vendas";
+    public String tabelaItemVenda = "item_venda";
 
     public MeuOpenHelper(Context context){
         super(context, NOME_BANCO, null, VERSAO_BANCO);
@@ -40,6 +42,7 @@ public class MeuOpenHelper extends SQLiteOpenHelper {
             db.execSQL(criaTabelaContato());
             db.execSQL(criaTabelaProduto());
             db.execSQL(criaTabelaVenda());
+            db.execSQL(criaTabelaItemVenda());
         }catch (SQLException e){
             e.printStackTrace();
         }
@@ -51,6 +54,7 @@ public class MeuOpenHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS contatos");
         db.execSQL("DROP TABLE IF EXISTS produtos");
         db.execSQL("DROP TABLE IF EXISTS vendas");
+        db.execSQL("DROP TABLE IF EXISTS item_venda");
         onCreate(db);
     }
 
@@ -119,6 +123,17 @@ public class MeuOpenHelper extends SQLiteOpenHelper {
         abrirDB();
         db.insert(tabelaProduto, null, produto.getContentValues());
         Toast.makeText(context, produto.getNome()+" Cadastrado.", Toast.LENGTH_LONG).show();
+        fecharDB();
+    }
+
+    public String criaTabelaItemVenda() {
+        return "CREATE TABLE item_venda(id integer primary key autoincrement, id_produto integer NOT NULL foreign key, quantidade integer NOT NULL);";
+    }
+
+    public void salvarItemVenda(ItemVenda itemVenda) throws SQLException {
+        abrirDB();
+        db.insert(tabelaItemVenda, null, Integer.parseInt(itemVenda.getProduto().getCod()), itemVenda.getQuant());
+        Toast.makeText(context, "Item Adicionado", Toast.LENGTH_LONG).show();
         fecharDB();
     }
 

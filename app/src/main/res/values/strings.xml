@@ -20,5 +20,8 @@
     <string name="title_activity_form_produtos">Formulário - Cadastrar um Produto</string>
     <string name="action_share">Compartilhar</string>
     <string name="title_activity_exibir_estoque">Exibir_estoque</string>
+    <string name="title_activity_activity_form_item_venda">activity_form_itemVenda</string>
+    <string name="title_activity_activity_form_item_venda_produto">activity_form_itemVenda_produto
+    </string>
 
 </resources>

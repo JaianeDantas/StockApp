@@ -44,6 +44,14 @@
             android:name=".activities.Exibir_vendas"
             android:label="Exibir_vendas" >
         </activity>
+        <activity
+            android:name=".activities.activity_form_itemVenda"
+            android:label="@string/title_activity_activity_form_item_venda" >
+        </activity>
+        <activity
+            android:name=".activities.activity_form_itemVenda_produto"
+            android:label="@string/title_activity_activity_form_item_venda_produto" >
+        </activity>
     </application>
 
 </manifest>
